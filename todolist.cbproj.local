@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2025/09/24 13:48:01.356,=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2025/09/24 13:48:01.790,=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2025/09/24 13:48:10.088,C:\Users\Axel\Documents\todolist\Unit1.cpp=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2025/09/24 13:48:10.088,C:\Users\Axel\Documents\todolist\Unit1.h=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
+    <Transaction>2025/09/24 13:48:10.088,C:\Users\Axel\Documents\todolist\Unit1.fmx=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.fmx</Transaction>
+    <Transaction>2025/09/24 13:48:26.367,C:\Users\Axel\Documents\Embarcadero\Studio\Projets\todolistPCH1.h=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2025/09/24 13:48:26.372,C:\Users\Axel\Documents\Embarcadero\Studio\Projets\todolist.cbproj=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+    <Transaction>2025/09/24 13:48:44.521,C:\Users\Axel\Documents\todolist\Unit1.cpp=</Transaction>
+    <Transaction>2025/09/24 13:49:27.400,=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2025/09/24 13:56:55.152,C:\Users\Axel\Documents\todolist\Unit1.h=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
+    <Transaction>2025/09/24 13:56:55.152,C:\Users\Axel\Documents\todolist\Unit1.cpp=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2025/09/24 13:56:55.152,C:\Users\Axel\Documents\todolist\Unit1.fmx=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\Unit1.fmx</Transaction>
+    <Transaction>2025/09/24 14:11:43.800,C:\Users\Axel\Documents\todolist\main_window.fmx=C:\Users\Axel\Documents\todolist\Unit1.fmx</Transaction>
+    <Transaction>2025/09/24 14:11:43.800,C:\Users\Axel\Documents\todolist\main_window.cpp=C:\Users\Axel\Documents\todolist\Unit1.cpp</Transaction>
+    <Transaction>2025/09/24 14:11:43.800,C:\Users\Axel\Documents\todolist\main_window.h=C:\Users\Axel\Documents\todolist\Unit1.h</Transaction>
+    <Transaction>2025/09/24 14:12:37.139,C:\Users\Axel\Documents\todolist\todolistPCH2.h=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\todolistPCH1.h</Transaction>
+    <Transaction>2025/09/24 14:12:37.221,C:\Users\Axel\Documents\todolist\todolist.cbproj=C:\Users\Axel\Documents\Embarcadero\Studio\Projets\todolist.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
