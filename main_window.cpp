@@ -11,15 +11,17 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
 }
-
-void __fastcall TForm1::AddClick(TObject *Sender) // Actions du bouton "Add"
+void __fastcall TForm1::createColumnClick(TObject *Sender)
 {
-	String task = Edit1->Text;  // On met le texte dans une variable
+	//Création de la column en fonction du nom définit
+	String columnName = Edit1->Text;
+	TStringColumn *col = new TStringColumn(StringGrid1);
+	col->Parent = StringGrid1;
+	col->Header = columnName;
+	col->Width = 150;
 
-   TListViewItem *item = ListView1->Items->Add();    // crée un nouvel élémet dans la ListView. La fonction retourne un pointeur vers le nouvel item qu'on stoque dans la variable item
-   item->Text = task;   // On ajoute une Task au TListView
-
-   if (Edit1->Text.IsEmpty()) {
-	item->Text = "Empty task";     // si l'input est vide un ajoute une task nommé "Empty Task"
-   }
+	// si la column est vide créer la avec comme nom "New Column"
+	if (Edit1->Text.IsEmpty()) {
+        col->Header = "New column";
+	}
 }

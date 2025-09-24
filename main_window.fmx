@@ -2,38 +2,47 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Task'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 544
+  ClientWidth = 658
   Position = Designed
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object Add: TButton
-    Position.X = 552.000000000000000000
-    Position.Y = 18.000000000000000000
+  object createColumn: TButton
+    Position.X = 536.000000000000000000
+    Position.Y = 34.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
     TabOrder = 0
-    Text = 'Add'
-    OnClick = AddClick
+    Text = 'Create Category'
+    OnClick = createColumnClick
   end
-  object ListView1: TListView
-    ItemAppearanceClassName = 'TListItemAppearance'
-    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
-    HeaderAppearanceClassName = 'TListHeaderObjects'
-    FooterAppearanceClassName = 'TListHeaderObjects'
-    Position.X = 8.000000000000000000
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
     Position.Y = 64.000000000000000000
-    Size.Width = 617.000000000000000000
-    Size.Height = 401.000000000000000000
+    Size.Width = 624.000000000000000000
+    Size.Height = 457.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
+    Viewport.Width = 620.000000000000000000
+    Viewport.Height = 432.000000000000000000
+  end
+  object Label1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 9.000000000000000000
+    Text = 'TODO LIST by Axel'
+    TabOrder = 2
   end
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 2
-    Position.X = 8.000000000000000000
-    Position.Y = 18.000000000000000000
-    Size.Width = 521.000000000000000000
+    TabOrder = 4
+    Position.X = 16.000000000000000000
+    Position.Y = 34.000000000000000000
+    Size.Width = 512.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
   end

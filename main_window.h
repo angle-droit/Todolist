@@ -23,10 +23,11 @@
 class TForm1 : public TForm
 {
 __published:	// Composants gérés par l'EDI
-	TButton *Add;
-	TListView *ListView1;
+	TButton *createColumn;
+	TStringGrid *StringGrid1;
+	TLabel *Label1;
 	TEdit *Edit1;
-	void __fastcall AddClick(TObject *Sender);
+	void __fastcall createColumnClick(TObject *Sender);
 private:	// Déclarations utilisateur
 public:		// Déclarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
