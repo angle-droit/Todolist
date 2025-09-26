@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ma TodoList</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+QWidget {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #64b5f6; margin: 10px;</string>
+      </property>
+      <property name="text">
+       <string>📝 Ma Liste de Tâches</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="inputLayout">
+      <item>
+       <widget class="QLineEdit" name="taskInput">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    padding: 8px; 
+    border: 2px solid #42a5f5; 
+    border-radius: 5px;
+    background-color: #3c3c3c;
+    color: #ffffff;
+    selection-background-color: #42a5f5;
+}
+QLineEdit:focus {
+    border: 2px solid #64b5f6;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Entrer une nouvelle tâche...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { 
+    background-color: #4caf50; 
+    color: white; 
+    border: none; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+}
+QPushButton:hover { 
+    background-color: #66bb6a; 
+}
+QPushButton:pressed { 
+    background-color: #388e3c; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="taskList">
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+      </property>
+      <property name="defaultDropAction">
+       <enum>Qt::DropAction::MoveAction</enum>
+      </property>
+      <property name="rowCount">
+       <number>10</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="clearAllButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { 
+    background-color: #757575; 
+    color: white; 
+    border: none; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+}
+QPushButton:hover { 
+    background-color: #9e9e9e; 
+}
+QPushButton:pressed { 
+    background-color: #616161; 
+}</string>
+        </property>
+        <property name="text">
+         <string>🔄 Tout effacer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deleteButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { 
+    background-color: #f44336; 
+    color: white; 
+    border: none; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+}
+QPushButton:hover { 
+    background-color: #ef5350; 
+}
+QPushButton:pressed { 
+    background-color: #d32f2f; 
+}</string>
+        </property>
+        <property name="text">
+         <string>🗑 Supprimer</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #b0b0b0; margin: 5px;</string>
+      </property>
+      <property name="text">
+       <string>Prêt - 0 tâche(s)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-bottom: 1px solid #555555;
+}
+QMenuBar::item {
+    background-color: transparent;
+    padding: 4px 8px;
+}
+QMenuBar::item:selected {
+    background-color: #42a5f5;
+    color: white;
+}
+QMenu {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+QMenu::item {
+    padding: 6px 20px;
+}
+QMenu::item:selected {
+    background-color: #42a5f5;
+}
+QMenu::separator {
+    height: 1px;
+    background-color: #555555;
+    margin: 2px 0px;
+}</string>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau"/>
+    <addaction name="actionOuvrir"/>
+    <addaction name="actionSauvegarder"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionA_propos"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">QStatusBar {
+    background-color: #2b2b2b;
+    color: #b0b0b0;
+    border-top: 1px solid #555555;
+}</string>
+   </property>
+  </widget>
+  <action name="actionNouveau">
+   <property name="text">
+    <string>Nouveau</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder">
+   <property name="text">
+    <string>Sauvegarder</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionA_propos">
+   <property name="text">
+    <string>À propos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
